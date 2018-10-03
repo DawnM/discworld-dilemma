@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700");
+
+body {
+  background: url("/images/dd-turtle-sky.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  background-color: #00111c;
+  color: #f8f8f8;
+  font-family: "Averia Serif Libre";
+  font-size: 18px;
+}
+
+.main {
+  width: 95vw;
+  height: 25vh;
+  margin: 55vh 0 10vh 0;
+}
+
+.title {
+  display: inline-block;
+  height: 20vw;
+  width: 75vw;
+}
+
+h1 {
+  color: #ff9500;
+  /*font-size: 1.7em;*/
+}
+
+h2 {
+  /*font-size: 1em;*/
+}
+
+.overlay {
+  background-color: #212121;
+  opacity: 0.72;
+  padding: 2vw;
+  margin: 3vw 0;
+}
+
+.logo {
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: inline-block;
+  position: relative;
+  right: 0;
+}
+
+.logo img {
+  width: 20vw;
+  height: 20vw;
+}
+
+form > * {
+  display: block;
+}
+
+button {
+  background-color: #ff9500;
+  color: #f8f8f8;
+}
+
+.leaderboard {
+  display: flex;
+}
+
+.leaderboard p {
+  display: inline;
+}
+
+#legal {
+  background-color: #f8f8f8;
+  color: #212121;
+  font-size: 0.6em;
+  text-align: center;
+  padding: 0.3vw;
+}
