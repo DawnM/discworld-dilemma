@@ -1,52 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700");
 
 body {
-  background: url("/images/dd-turtle-sky.jpg") no-repeat center center fixed;
+  background-color: #00111c;
+  background-image: linear-gradient(#04080e, #0e4a74, #32574c);
+  background: url("images/dd-turtle-sky.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  background-color: #00111c;
   color: #f8f8f8;
   font-family: "Averia Serif Libre";
   font-size: 18px;
 }
 
-.main {
-  width: 95vw;
-  height: 25vh;
-  margin: 55vh 0 10vh 0;
+main {
+  width: 90vw;
+  height: 75vh;
+  margin: 5vh auto 10vh auto;
 }
 
 .title {
   display: inline-block;
   height: 20vw;
-  width: 75vw;
+  width: 70vw;
 }
 
 h1 {
   color: #ff9500;
-  /*font-size: 1.7em;*/
+  font-size: 1.6em;
+  margin: 1vh 0;
 }
 
 h2 {
-  /*font-size: 1em;*/
+  font-size: 1.2em;
+  margin: 0;
 }
 
 .overlay {
   background-color: #212121;
-  opacity: 0.72;
+  opacity: 0.8;
   padding: 2vw;
   margin: 3vw 0;
 }
 
 .logo {
   border-radius: 50%;
-  background-color: #f8f8f8;
+  background-color: #d0d0d0;
+  opacity: 0.8;
   display: inline-block;
   position: relative;
   right: 0;
+  float: right;
 }
 
 .logo img {
@@ -54,27 +59,49 @@ h2 {
   height: 20vw;
 }
 
-form > * {
+.form {
   display: block;
+  margin: 2vh auto;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 button {
   background-color: #ff9500;
   color: #f8f8f8;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.nerds {
+  display: flex;
+
 }
 
 .leaderboard {
-  display: flex;
+  display: inline;
+  flex: 50%;
 }
 
 .leaderboard p {
-  display: inline;
+  margin: 0.3rem;
 }
 
 #legal {
   background-color: #f8f8f8;
   color: #212121;
-  font-size: 0.6em;
+  font-family: sans-serif;
+  letter-spacing: 0.5;
+  line-height: 1.4;
+  font-size: 0.5em;
   text-align: center;
-  padding: 0.3vw;
+  padding: 0.1vw;
 }

@@ -4,7 +4,9 @@
     <title>Discworld Dilemma Quiz</title>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="sanitize.css" type="text/css" /> <!-- If I keep this I need to add the credit in my README -->
     <link rel="stylesheet" href="main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -23,22 +25,25 @@
     </div>
     <div id="user-info" class="overlay">
       <form method="POST">
-        <label for="username">Enter a username to start playing:</label>
-        <input type="text" id="username" name="username">
-        <button>I'll help!</button>
+        <label class="form" for="username">Enter a username to start playing:</label>
+        <input class="form" type="text" id="username" name="username">
+        <button class="form">I'll help!</button>
       </form>
       <div>
         <h2>Top players:</h2>
-        <div class="leaderboard">
-          <p>Robert</p>
-          <p>Terry</p>
-          <p>Hannah</p>
-          <p>Derri</p>
-          <p>Judes</p>
-          <p>Ryan</p>
-          <p>Coral</p>
-          <p>[user]</p>
-          <p>Roxy</p>
+        <div class="nerds">
+          <div class="leaderboard">
+            <p>Robert</p>
+            <p>Terry</p>
+            <p>Hannah</p>
+            <p>Derri</p>
+            <p>Judes</p>
+          </div>
+          <div class="leaderboard">
+            <p>Ryan</p>
+            <p>Coral</p>
+            <p>[user]</p>
+            <p>Roxy</p>
         </div>
       </div>
     </div>
