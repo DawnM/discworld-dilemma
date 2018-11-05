@@ -1,4 +1,8 @@
-[
+# Sam Gomena  https://stackoverflow.com/questions/42526243/making-quiz-how-to-allow-user-to-have-multiple-trys-python
+
+helpMessage = "The quotes have escaped their books and the library is in chaos! To earn bananas, tell each quote which Terry Pratchett book it belongs to."
+
+quotes = [
     { "quote": "Tourist, Rincewind had decided, meant \'idiot\'.", 
     "book": "The Colour Of Magic"},
     
@@ -170,3 +174,34 @@
   { "quote": "No shame in tears for them as you\'ve loved.", 
     "book":"The Shepherd\'s Crown" }
 ]
+
+import random
+
+questions = random.sample(range(0, 26), 5)
+# print(questions)
+
+score = 0
+
+print(helpMessage + "\n")
+for number in questions:
+  print(quotes[number].get('quote'))
+
+  answerCorrect = False
+  attempts = 3
+
+  while not answerCorrect:
+    answer = input("Name the book for this quote:")
+    attempts -= 1
+    if answer.title() == quotes[number].get('book'):
+      score += 1
+      print('Well done! Here is your banana!\n')
+      answerCorrect = True
+
+    elif attempts > 0:
+      print('Oops Try Again?\n')
+
+    else:
+      print("Sorry, no banana for you! The correct title is " + quotes[number].get('book') + "\n")
+      break
+      
+print("Thanks for your help! You got " + str(score) + " banana" + ("s" if score != 1 else "") + "!")
